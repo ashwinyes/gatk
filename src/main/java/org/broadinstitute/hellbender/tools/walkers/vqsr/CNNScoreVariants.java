@@ -248,10 +248,12 @@ public class CNNScoreVariants extends TwoPassVariantWalker {
         if(this.disableAVXCheck == false) {
             IntelGKLUtils utils = new IntelGKLUtils();
             utils.load(null);
+/*
             if (utils.isAvxSupported() == false) {
                 // Give user the bad news, suggest remedies.
                 throw new UserException.HardwareFeatureException(String.format(CNNScoreVariants.AVXREQUIRED_ERROR, DISABLE_AVX_CHECK_NAME));
             }
+*/
         }
 
         // Start the Python process and initialize a stream writer for streaming data to the Python code

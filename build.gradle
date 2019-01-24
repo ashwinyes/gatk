@@ -310,9 +310,7 @@ dependencies {
     // Dependency change for including MLLib
     compile('com.esotericsoftware:reflectasm:1.10.0:shaded')
 
-    compile('com.intel.gkl:gkl:0.8.6') {
-        exclude module: 'htsjdk'
-    }
+    compile files('/home/ashwin/bigstack/gkl/GKL/build/libs/gkl-0.8.6-11-gf3ed00d-SNAPSHOT.jar')
 
     compile 'org.broadinstitute:gatk-bwamem-jni:1.0.4'
     compile 'org.broadinstitute:gatk-fermilite-jni:1.2.0'
